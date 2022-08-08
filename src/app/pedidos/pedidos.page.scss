@@ -1,0 +1,24 @@
+// css marca de agua
+// .fondomarcapruebagratuita {
+//     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='100px' width='120px'><text transform='translate(20, 100) rotate(-45)' fill='rgb(245,45,45,0.5)' font-size='16'>Prueba Gratuita</text><text transform='translate(40, 100) rotate(-45)' fill='rgb(245,45,45,0.5)' font-size='13'>Page para quitar  </text><text transform='translate(60, 100) rotate(-45)' fill='rgb(245,45,45,0.5)' font-size='10'>Esta marcas de</text><text transform='translate(80, 100) rotate(-45)' fill='rgb(245,45,45,0.5)' font-size='13'>pedidos</text></svg>");
+//   }
+  // css marca de agua
+
+// css marca de agua en content
+  ion-content.background{
+    --background: url('/assets/img/background/background.png') no-repeat 100% 100%;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='100px' width='120px'><text transform='translate(20, 100) rotate(-45)' fill='rgb(245,45,45,0.5)' font-size='16'>Prueba Gratuita</text><text transform='translate(40, 100) rotate(-45)' fill='rgb(245,45,45,0.5)' font-size='13'>Page para quitar  </text><text transform='translate(60, 100) rotate(-45)' fill='rgb(245,45,45,0.5)' font-size='10'>Esta marcas de</text><text transform='translate(80, 100) rotate(-45)' fill='rgb(245,45,45,0.5)' font-size='13'>pedidos</text></svg>");
+}
+// css marca de agua en content
+
+
+.fondocontent{
+    background-color: #f0ecec!important;
+}
+
+
+ion-content.background-sin-marca{
+  --background: url('/assets/img/background/background.png') no-repeat 100% 100%;
+  // background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='100px' width='120px'><text transform='translate(20, 100) rotate(-45)' fill='rgb(245,45,45,0.5)' font-size='16'>Prueba Gratuita</text><text transform='translate(40, 100) rotate(-45)' fill='rgb(245,45,45,0.5)' font-size='13'>Page para quitar  </text><text transform='translate(60, 100) rotate(-45)' fill='rgb(245,45,45,0.5)' font-size='10'>Esta marcas de</text><text transform='translate(80, 100) rotate(-45)' fill='rgb(245,45,45,0.5)' font-size='13'>pedidos</text></svg>");
+}
+

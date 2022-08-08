@@ -1,9 +1,30 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Órdenes</ion-title>
+    <ion-title *ngIf="hidevalue==false">Punto de retiro&nbsp; {{maxTime}} </ion-title>
+    <ion-title *ngIf="hidevalue==true">Punto de retiro</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content  padding [class]="this.acceso=='prueba' ? 'background fondocontent' : 'background-sin-marca fondocontent'" >
+  
+
+
+  <ion-card>
+    
+  </ion-card>
+
+
+    
+  
+  
+    <!-- <div class="fondomarcapruebagratuita" style="width:100%;height:100%; position: relative; ">
+    </div>
+   -->
+    
+    
+
+
+
+
 
 </ion-content>

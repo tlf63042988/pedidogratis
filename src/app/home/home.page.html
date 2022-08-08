@@ -15,6 +15,30 @@
 
   <div id="container">
     <strong>Listo para una prueba?</strong>
-    <p>Iniciar Órdenes <a (click)="veraccesodeldispositivo()">Ver acceso</a></p>
+    <p>Iniciar Órdenes <a (click)="PedirCorreo()">Acceso Pago</a></p>
+    <ion-button [disabled]="maxTime&&maxTime<1" id="open-custom-dialog" color="primary" (click)="IniciarPrueba()">Prueba Gratuita</ion-button>
   </div>
+
+  
+  <ion-modal id="example-modal" #modal trigger="open-custom-dialog">
+    <ng-template>
+      <div class="wrapper">
+      
+        <br>
+        
+        <div id="pot">
+          <ion-icon color="primary" name="bicycle"></ion-icon>
+        </div>
+        <br>
+        
+        
+      </div>
+      <div class="loading">Verificando Tiempo de prueba</div>
+    </ng-template>
+  </ion-modal>
+
+
+  
+
 </ion-content>
+

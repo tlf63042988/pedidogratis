@@ -25,3 +25,92 @@
 #container a {
   text-decoration: none;
 }
+
+
+// inicia css del modal
+
+
+ion-modal#example-modal {
+  --width: fit-content;
+  --min-width: 250px;
+  --height: fit-content;
+  --border-radius: 6px;
+  --box-shadow: 0 28px 48px rgba(0, 0, 0, 0.4);
+}
+
+ion-modal#example-modal h1 {
+  margin: 20px 20px 10px 20px;
+}
+
+ion-modal#example-modal ion-icon {
+  margin-right: 6px;
+
+  width: 48px;
+  height: 48px;
+
+  padding: 4px 0;
+
+  color: #aaaaaa;
+}
+
+ion-modal#example-modal .wrapper {
+  margin-bottom: 10px;
+}
+
+
+// termina el css del modal
+
+// inicia el css de la animacion
+#pot {
+  bottom: 15%;
+  position: absolute;
+  animation: linear infinite;
+  animation-name: run;
+  animation-duration: 5s;
+}
+@keyframes run {
+  0% {
+    left: 0;
+  }
+  48% {
+    -webkit-transform: rotateY(0deg); 
+  }
+  50% { 
+    left: calc(100% - 100px);
+    -webkit-transform: rotateY(180deg); 
+  }
+  98% {
+    -webkit-transform: rotateY(180deg); 
+  }
+  100% {
+    left: 0;    
+     -webkit-transform: rotateY(0deg);
+  }
+}
+// termina el css de la animacion
+
+
+// css texto loading
+
+.loading {
+  text-align:center;
+  font-family: sans-serif;
+}
+
+.loading:after {
+display: inline-block;
+animation: dotty steps(1,end) 1s infinite;
+content: '';
+}
+
+@keyframes dotty {
+0%   { content: ''; }
+25%  { content: '.'; }
+50%  { content: '..'; }
+75%  { content: '...'; }
+100% { content: ''; }
+}
+// css texto loading
+
+
+
