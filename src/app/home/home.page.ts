@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MenuController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,10 +9,18 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
-
-  veraccesodeldispositivo(){
+  constructor( public menu:MenuController, private router: Router) {
     
+  }
+
+  ionViewWillEnter() {
+    console.log('dirigiendo al inicio...');
+  this.menu.enable(false);
+}
+  veraccesodeldispositivo(){
+
+    // this.router.navigate(['/tablinks'])
+
   }
 
 }

@@ -1,3 +1,87 @@
-<ion-app>
+
+<!-- <ion-menu side="start" menuId="rapi" contentId="main">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Start Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu> -->
+
+<ion-menu side="start" menuId="pedidosya" contentId="main" class="my-custom-menu">
+  <ion-header>
+    <ion-toolbar>
+      <ion-item lines="none">
+        <h6>Jose Antonio <br>Gutierrez Martinez</h6>
+        <div  style="position:absolute; right:6%;">
+          <ion-icon style="color:black;" [src]="myCustomIcon" size="large"></ion-icon>
+        </div>
+        <div style="position:absolute; right:4%; top:2%;">
+          <p><strong>1</strong></p>
+        </div>
+      </ion-item>
+      <ion-item lines="none">
+        <p><a>Perfil</a></p>
+      </ion-item>
+    
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item lines="none">Horas de conexión Disponibles</ion-item>
+      <ion-item lines="none">Mis Horas de Conexión</ion-item>
+      <ion-item>No prestación de Servicios</ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-item>Notificaciones</ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-item lines="none">Pagos</ion-item>
+      <ion-item lines="none">Logros</ion-item>
+      <ion-item>Refiere un Amigo</ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-item lines="none">Rendimiento</ion-item>
+      <ion-item>Ir a Puntaje Actual</ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-item>Soporte</ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-item>Configuración</ion-item>
+    </ion-list>
+    <ion-item lines="none">
+      <p><a>Cambiar a Rappi</a></p>
+    </ion-item>
+    
+  </ion-content>
+</ion-menu>
+
+<!-- <ion-menu side="end" type="push" contentId="main">
+  <ion-header>
+    <ion-toolbar color="danger">
+      <ion-title>End Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu> -->
+
+<ion-router-outlet id="main"></ion-router-outlet>
+
+
+<!-- <ion-app>
   <ion-router-outlet></ion-router-outlet>
-</ion-app>
+</ion-app> -->
