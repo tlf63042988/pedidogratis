@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title *ngIf="hidevalue==false">Punto de retiro&nbsp; {{maxTime}} </ion-title>
-    <ion-title *ngIf="hidevalue==true">Punto de retiro</ion-title>
+    <ion-title *ngIf="acceso&&acceso=='prueba'&&hidevalue==false">Punto de retiro&nbsp; {{maxTime}} </ion-title>
+    <ion-title *ngIf="acceso&&acceso!='prueba'">Punto de retiro</ion-title>
   </ion-toolbar>
 </ion-header>
 

@@ -30,7 +30,9 @@ export class HomePage {
 
     var fechaactual = this.datepipe.transform(new Date(), 'yyyyMMddhhmmss');
     console.log('fechaactualnumerica',fechaactual);
-    localStorage.setItem('maxTime', '30');
+    if(!this.maxTime){
+      localStorage.setItem('maxTime', '300');
+    }
     localStorage.setItem('acceso', 'prueba');
     this.router.navigate(['/tablinks/estado'])
     

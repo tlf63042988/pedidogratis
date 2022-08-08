@@ -19,8 +19,10 @@ export class PedidosPage implements OnInit {
   }
 
   ionViewWillEnter() {
-    this.StartTimer();
     this.acceso=localStorage.getItem('acceso');
+    if(!this.acceso||this.acceso!='email'){
+      this.StartTimer();
+    }
     this.maxTime=localStorage.getItem('maxTime');
     if(this.maxTime>0){
       this.hidevalue==false
