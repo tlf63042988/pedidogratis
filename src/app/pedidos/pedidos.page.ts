@@ -14,6 +14,11 @@ export class PedidosPage implements OnInit {
   acceso: string;
   hora:any;
   AmOrPm: string;
+  candado: boolean = false;
+  tienda: string ='Juan Valdez San Miguel';
+  codigolargo: string ='971679356';
+  codigocorto: string ='3321';
+  nombrecliente: string ='Juan Quispe';
   constructor(private router: Router) { }
 
   ngOnInit() {
@@ -41,7 +46,9 @@ export class PedidosPage implements OnInit {
     }
 }
   
-
+ionChangeTIENDA(event){
+  this.tienda=event.target.value;
+}
 
 StartTimer(){
   this.timer = setTimeout(x => 

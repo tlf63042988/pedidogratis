@@ -9,12 +9,14 @@
   
 <ion-item lines="none" no-padding class="ion-no-padding">
   <ion-text>
-    <p style="margin-top: 6px; margin-left:15px;font-size:large; font-weight: 900;">Popeyes Puruchucu</p>
+    <p *ngIf="!candado" style="margin-top: 6px; margin-left:15px;font-size:large; font-weight: 900;">{{tienda}}</p>
+    <ion-input *ngIf="candado" [(ngModel)]="tienda" placeholder="Tienda" style="margin-bottom: 8px; margin-top: -4px; margin-left:15px;font-size:large; font-weight: 900; color:red;"></ion-input>
     <p style="margin-top: -15px; margin-left:15px; font-size:x-small;  font-weight: 700;">Retirar a las  {{hora | date : "hh:mm" }} {{AmOrPm}}</p>
     <div style="position:absolute; right:5%; top:35%;">
       <ion-icon style="font-size: x-large;" color="primary" name="ellipsis-horizontal"></ion-icon>
       &nbsp;&nbsp;
-      <ion-icon style="font-size: x-large;" color="primary" name="map-outline"></ion-icon>
+      <ion-icon *ngIf="!candado" (click)="candado=true" style="font-size: x-large;" color="primary" name="map-outline"></ion-icon>
+      <ion-icon *ngIf="candado" (click)="candado=false" style="font-size: x-large;" color="danger" name="map-outline"></ion-icon>
     </div>
   </ion-text>
 </ion-item>
@@ -23,8 +25,18 @@
   <ion-card-header>
     <ion-text>
       <p style="font-size:x-small; ;color:#252525;">Detalles de la orden</p>
-      <p style="font-size:large; color:black; margin-top:0px;">875324578 (#3321)</p>
-      <p class="letralijera" style="font-size:medium; margin-top:-12px;color:#252525; font-weight: 700;">Jorge Colmenarez</p>
+      <p *ngIf="!candado" style="font-size:large; color:black; margin-top:0px;">{{codigolargo}} (#{{codigocorto}})</p>
+      <ion-row *ngIf="candado" no-padding class="ion-no-padding">
+        <ion-col col-6 no-padding class="ion-no-padding">
+            <ion-input style="font-size:large; color:red; margin-top:0px; margin-bottom:18px;" [(ngModel)]="codigolargo" no-padding class="ion-no-padding"> </ion-input>
+        </ion-col>
+        <ion-col col-6 no-padding class="ion-no-padding">
+            <ion-input style="font-size:large; color:red; margin-top:0px; margin-bottom:18px;" [(ngModel)]="codigocorto" no-padding class="ion-no-padding" >  </ion-input>
+        </ion-col>
+      </ion-row>
+      
+      <p *ngIf="!candado" class="letralijera" style="font-size:medium; margin-top:-12px;color:#252525; font-weight: 700;">{{nombrecliente}}</p>
+      <ion-input *ngIf="candado" [(ngModel)]="nombrecliente" placeholder="Nombre Cliente"  style="font-size:medium; margin-top:-22px; margin-bottom:6px; color:red; font-weight: 700;"></ion-input>
       <p style="color:#180c9c; margin-top:-3px;">Ver el producto de la orden (1)  <ion-icon color="primary" name="chevron-down-outline"></ion-icon></p>
       <hr style="width:120%; margin-left:-20px;">
       <p style="font-size:x-small;color:#363636; font-weight: 700 ;">Pago</p>
