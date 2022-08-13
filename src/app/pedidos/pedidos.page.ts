@@ -12,13 +12,25 @@ export class PedidosPage implements OnInit {
   timer: any;
   hidevalue: boolean;
   acceso: string;
-
+  hora:any;
+  AmOrPm: string;
   constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
   ionViewWillEnter() {
+    this.hora= new Date();
+    var hours = this.hora.getHours();
+    var minutes = this.hora.getMinutes();
+    var ampm = hours >= 12 ? 'p.m.' : 'a.m.';
+    this.AmOrPm=ampm;
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+    minutes = minutes < 10 ? '0'+minutes : minutes;
+    var strTime = hours + ':' + minutes + ' ' + ampm;
+    console.log('strTime',strTime);
+
     this.acceso=localStorage.getItem('acceso');
     if(!this.acceso||this.acceso!='email'){
       this.StartTimer();
