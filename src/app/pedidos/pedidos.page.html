@@ -7,65 +7,93 @@
 
 <ion-content  padding [class]="this.acceso=='prueba' ? 'background fondocontent' : 'background-sin-marca fondocontent'" >
   
-<ion-item lines="none" no-padding class="ion-no-padding">
-  <ion-text>
-    <p *ngIf="!candado" style="margin-top: 6px; margin-left:15px;font-size:large; font-weight: 900;">{{tienda}}</p>
-    <ion-input *ngIf="candado" [(ngModel)]="tienda" placeholder="Tienda" style="margin-bottom: 8px; margin-top: -4px; margin-left:15px;font-size:large; font-weight: 900; color:red;"></ion-input>
-    <p style="margin-top: -15px; margin-left:15px; font-size:x-small;  font-weight: 700;">Retirar a las  {{hora | date : "hh:mm" }} {{AmOrPm}}</p>
-    <div style="position:absolute; right:5%; top:35%;">
-      <ion-icon style="font-size: x-large;" color="primary" name="ellipsis-horizontal"></ion-icon>
-      &nbsp;&nbsp;
-      <ion-icon *ngIf="!candado" (click)="candado=true" style="font-size: x-large;" color="primary" name="map-outline"></ion-icon>
-      <ion-icon *ngIf="candado" (click)="candado=false" style="font-size: x-large;" color="danger" name="map-outline"></ion-icon>
-    </div>
-  </ion-text>
-</ion-item>
+<section *ngIf="step=='1'">
 
-<ion-card style="border-radius:10px;">
-  <ion-card-header>
+  <ion-item lines="none" no-padding class="ion-no-padding">
     <ion-text>
-      <p style="font-size:x-small; ;color:#252525;">Detalles de la orden</p>
-      <p *ngIf="!candado" style="font-size:large; color:black; margin-top:0px;">{{codigolargo}} (#{{codigocorto}})</p>
-      <ion-row *ngIf="candado" no-padding class="ion-no-padding">
-        <ion-col col-6 no-padding class="ion-no-padding">
-            <ion-input style="font-size:large; color:red; margin-top:0px; margin-bottom:18px;" [(ngModel)]="codigolargo" no-padding class="ion-no-padding"> </ion-input>
-        </ion-col>
-        <ion-col col-6 no-padding class="ion-no-padding">
-            <ion-input style="font-size:large; color:red; margin-top:0px; margin-bottom:18px;" [(ngModel)]="codigocorto" no-padding class="ion-no-padding" >  </ion-input>
-        </ion-col>
-      </ion-row>
-      
-      <p *ngIf="!candado" class="letralijera" style="font-size:medium; margin-top:-12px;color:#252525; font-weight: 700;">{{nombrecliente}}</p>
-      <ion-input *ngIf="candado" [(ngModel)]="nombrecliente" placeholder="Nombre Cliente"  style="font-size:medium; margin-top:-22px; margin-bottom:6px; color:red; font-weight: 700;"></ion-input>
-      <p style="color:#180c9c; margin-top:-3px;">Ver el producto de la orden (1)  <ion-icon color="primary" name="chevron-down-outline"></ion-icon></p>
-      <hr style="width:120%; margin-left:-20px;">
-      <p style="font-size:x-small;color:#363636; font-weight: 700 ;">Pago</p>
-      <p class="letralijera" style="color:#151515; font-size:small; font-weight: 700 ;">No pagar en el local</p>
+      <p *ngIf="!candado" style="margin-top: 6px; margin-left:15px;font-size:large; font-weight: 900;">{{tienda}}</p>
+      <ion-input *ngIf="candado" [(ngModel)]="tienda" placeholder="Tienda" style="margin-bottom: 8px; margin-top: -4px; margin-left:15px;font-size:large; font-weight: 900; color:red;"></ion-input>
+      <p style="margin-top: -15px; margin-left:15px; font-size:x-small;  font-weight: 700;">Retirar a las  {{hora | date : "hh:mm" }} {{AmOrPm}}</p>
+      <div style="position:absolute; right:5%; top:35%;">
+        <ion-icon style="font-size: x-large;" color="primary" name="ellipsis-horizontal"></ion-icon>
+        &nbsp;&nbsp;
+        <ion-icon *ngIf="!candado" (click)="candado=true" style="font-size: x-large;" color="primary" name="map-outline"></ion-icon>
+        <ion-icon *ngIf="candado" (click)="candado=false" style="font-size: x-large;" color="danger" name="map-outline"></ion-icon>
+      </div>
     </ion-text>
-    <br>
-    <ion-button size="large" color="primary" expand="block" >Retirar</ion-button>
-
-  </ion-card-header>
-  <ion-card-content>
-
-  </ion-card-content>
-</ion-card>
-
-  <ion-card>
+  </ion-item>
+  
+  <ion-card style="border-radius:10px; height:86%">
+    <ion-card-header>
+      <ion-text>
+        <p style="font-size:x-small; ;color:#252525;">Detalles de la orden</p>
+        <p *ngIf="!candado" style="font-size:large; color:black; margin-top:0px;">{{codigolargo}} (#{{codigocorto}})</p>
+        <ion-row *ngIf="candado" no-padding class="ion-no-padding">
+          <ion-col col-6 no-padding class="ion-no-padding">
+              <ion-input style="font-size:large; color:red; margin-top:0px; margin-bottom:18px;" [(ngModel)]="codigolargo" no-padding class="ion-no-padding"> </ion-input>
+          </ion-col>
+          <ion-col col-6 no-padding class="ion-no-padding">
+              <ion-input style="font-size:large; color:red; margin-top:0px; margin-bottom:18px;" [(ngModel)]="codigocorto" no-padding class="ion-no-padding" >  </ion-input>
+          </ion-col>
+        </ion-row>
+        
+        <p *ngIf="!candado" class="letralijera" style="font-size:medium; margin-top:-12px;color:#252525; font-weight: 700;">{{nombrecliente}}</p>
+        <ion-input *ngIf="candado" [(ngModel)]="nombrecliente" placeholder="Nombre Cliente"  style="font-size:medium; margin-top:-22px; margin-bottom:6px; color:red; font-weight: 700;"></ion-input>
+        <p style="color:#180c9c; margin-top:-3px;">Ver el producto de la orden (1)  <ion-icon color="primary" name="chevron-down-outline"></ion-icon></p>
+        <hr style="width:120%; margin-left:-20px;">
+        <p style="font-size:x-small;color:#363636; font-weight: 700 ;">Pago</p>
+        <p class="letralijera" style="color:#151515; font-size:small; font-weight: 700 ;">No pagar en el local</p>
+      </ion-text>
+      <br>
+      
+    </ion-card-header>
+    
+    
     
   </ion-card>
-
-
-    
+  
+  <ion-button class="boton-retirar" id="open-modal" size="large" color="primary" expand="block" >Retirar</ion-button>
   
   
-    <!-- <div class="fondomarcapruebagratuita" style="width:100%;height:100%; position: relative; ">
-    </div>
-   -->
-    
-    
+  
+  <ion-modal
+  trigger="open-modal"
+  [initialBreakpoint]="1"
+  [breakpoints]="[0, 1]"
+  handleBehavior="cycle"
+  >
+  <ng-template>
+    <ion-content class="ion-padding">
+      <div class="ion-margin-top">
+        <ion-text>
+          <p style="font-size:x-large; color:black; margin-top:0px;">¿Confirmas que retiraste el pedido {{codigolargo}}(#{{codigocorto}})?</p>
+        </ion-text>
+      </div>
+  
+      <ion-button (click)="step2()" size="large" color="primary" expand="block" >Confirmar Retiro</ion-button>
+      <ion-button (click)="cerrarmodal()" class="boton-cancelar-modal"  size="large" color="primary" expand="block" fill="clear">Cancelar</ion-button>
+  
+    </ion-content>
+  </ng-template>
+  </ion-modal>
 
 
+</section>
+
+<section *ngIf="step=='2'" >
+    <section>
+      <ion-text style="text-align: center;">
+        <p style="font-size:medium; font-weight: 700;">Llegada estimada a las <a style="font-weight: 900; color:black;">{{hora | date : "hh:mm" : 'UTC-4'  }} {{AmOrPmLlegada}}</a></p>
+      </ion-text>
+    </section>
+    <section >
+        <img style="max-width: 100%; min-width: 100%; max-height:50%; min-height:50%"  src="assets/fondo-landing-retiro.png">
+    </section>
+    <section>
+      <p class="letralijera" style="font-size:medium; margin-top:-12px;color:#252525; font-weight: 700;">{{nombrecliente}}</p>
+    </section>
+    
+</section>
 
 
 

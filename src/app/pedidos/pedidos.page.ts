@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'app-pedidos',
@@ -13,13 +14,18 @@ export class PedidosPage implements OnInit {
   hidevalue: boolean;
   acceso: string;
   hora:any;
+  horaentrega:any;
   AmOrPm: string;
+  AmOrPmLlegada: string;
   candado: boolean = false;
   tienda: string ='Juan Valdez San Miguel';
   codigolargo: string ='971679356';
   codigocorto: string ='3321';
   nombrecliente: string ='Juan Quispe';
-  constructor(private router: Router) { }
+  step: string = '1';
+  constructor(private router: Router,
+    public modalController:ModalController
+    ) { }
 
   ngOnInit() {
   }
@@ -34,7 +40,7 @@ export class PedidosPage implements OnInit {
     hours = hours ? hours : 12; // the hour '0' should be '12'
     minutes = minutes < 10 ? '0'+minutes : minutes;
     var strTime = hours + ':' + minutes + ' ' + ampm;
-    console.log('strTime',strTime);
+    console.log('strTime Retiro',strTime);
 
     this.acceso=localStorage.getItem('acceso');
     if(!this.acceso||this.acceso!='email'){
@@ -76,7 +82,25 @@ StartTimer(){
 
 }
 
+cerrarmodal(){
+  this.modalController.dismiss();
+}
 
+step2(){
+  this.horaentrega= new Date();
+  var hours = this.horaentrega.getHours();
+  var minutes = this.horaentrega.getMinutes();
+  var ampm = hours >= 12 ? 'p.m.' : 'a.m.';
+  this.AmOrPmLlegada=ampm;
+  hours = hours % 12;
+  hours = hours ? hours : 12; // the hour '0' should be '12'
+  minutes = minutes < 10 ? '0'+minutes : minutes;
+  var strTime = hours + ':' + minutes + ' ' + ampm;
+  console.log('strTime Llegada',strTime);
+
+  this.modalController.dismiss();
+  this.step='2';
+}
 
 
 

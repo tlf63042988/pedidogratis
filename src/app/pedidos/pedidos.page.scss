@@ -27,3 +27,55 @@ hr {
   margin: 10px 0;
   width: 100%;
 }
+
+.boton-retirar {
+  position: absolute;
+  bottom: 7%;
+  width: 82%;
+  left:8.5%;
+}
+
+
+
+// estilos de modal
+ion-modal {
+  --height: 40%;
+  --border-radius: 16px;
+
+  &::part(handle) {
+
+}
+
+}
+
+ion-modal::part(backdrop) {
+
+}
+
+
+ion-modal::part(content) {
+
+}
+
+
+ion-modal::part(handle) {
+
+    background: white;
+
+}
+
+ion-modal#example-modal .wrapper {
+
+}
+
+
+
+
+.boton-cancelar-modal {
+  border: 2px solid #d8dcf4;
+  border-radius: 12px;
+
+}
+
+
+// estilos del modal
