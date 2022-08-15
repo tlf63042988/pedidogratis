@@ -5,7 +5,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content  padding [class]="this.acceso=='prueba' ? 'background fondocontent' : 'background-sin-marca fondocontent'" >
+<ion-content  *ngIf="this.step=='1'" padding [class]="this.acceso=='prueba' ? 'background fondocontent' : 'background-sin-marca fondocontent'" >
   
 <section *ngIf="step=='1'">
 
@@ -80,8 +80,8 @@
 
 </section>
 
-<section *ngIf="step=='2'" >
-    <section>
+<section >
+    <!-- <section>
       <ion-text style="text-align: center;">
         <p style="font-size:medium; font-weight: 700;">Llegada estimada a las <a style="font-weight: 900; color:black;">{{hora | date : "hh:mm" : 'UTC-4'  }} {{AmOrPmLlegada}}</a></p>
       </ion-text>
@@ -91,10 +91,75 @@
     </section>
     <section>
       <p class="letralijera" style="font-size:medium; margin-top:-12px;color:#252525; font-weight: 700;">{{nombrecliente}}</p>
-    </section>
+    </section> -->
+
+
+
+
+    
     
 </section>
 
 
 
+</ion-content>
+
+<ion-content *ngIf="this.step=='2'">
+  <ion-grid  class="ion-no-padding" no-padding>
+    <ion-row class="ion-no-padding" no-padding>
+      <ion-col  class="ion-no-padding" no-padding>
+        <ion-text  style="text-align: center;">
+          <p style="font-size:medium; font-weight: 700; margin-top:10px; margin-bottom:3px;">Llegada estimada a las <a style="font-weight: 900; color:black;">{{hora | date : "hh:mm" : 'UTC-4'  }} {{AmOrPmLlegada}}</a></p>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-no-padding" no-padding>
+      <ion-col size="0.2">
+      </ion-col>
+      <ion-col size="11.6">
+        <ion-card style="border: 1px solid #B9B9B9 ; border-radius: 12px; box-shadow: none;" class="backgroundmapa">
+          
+          <ion-fab-button style="position:absolute; right:2%;bottom:2%" color="primary"><ion-icon size="large" style="color:white;" name="navigate"></ion-icon></ion-fab-button>
+
+        </ion-card>
+        
+      </ion-col>
+      <ion-col size="0.2">
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-no-padding" no-padding>
+      <ion-col size="8" class="ion-no-padding" no-padding>
+        <p  style="font-size:small; font-weight: 700; margin-top:1px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Detalles del punto de entrega</p>
+        <p class="letralijera" style="font-size:xx-large; margin-top:-12px;color:#252525; font-weight: 700;">&nbsp;&nbsp; {{nombrecliente}}</p>
+
+      </ion-col>
+      <ion-col size="4" class="ion-no-padding" no-padding>
+        <div style="position:absolute; right:20%; bottom:35%;">
+          <ion-icon  style="color:#180c9c;font-size:26px;" name="map-outline"></ion-icon>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <ion-icon  style="color:#180c9c;font-size:26px;" [src]="myCustomCallIcon" ></ion-icon>
+        </div>
+
+      </ion-col>
+    </ion-row>
+    <ion-row  class="ion-no-padding" no-padding>
+      <ion-col>
+        <ion-text>
+          <p style="font-size:medium; font-weight: 700; margin-top:10px; margin-bottom:3px;">
+            &nbsp;&nbsp;&nbsp;
+            <ion-icon style="font-size:26px; 
+            " name="location"></ion-icon>
+            {{this.direecionentrega}}
+           </p>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+      </ion-col>
+      
+    </ion-row>
+  </ion-grid>
+  <ion-button class="boton-retirar" id="open-modal" size="large" color="primary" expand="block" >Llegué al punto de entrega</ion-button>
 </ion-content>

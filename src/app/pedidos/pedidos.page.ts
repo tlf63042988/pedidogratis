@@ -8,6 +8,7 @@ import { ModalController } from '@ionic/angular';
   styleUrls: ['./pedidos.page.scss'],
 })
 export class PedidosPage implements OnInit {
+  myCustomCallIcon: string = "/assets/icons/call-volume.svg";
 
   maxTime: any;
   timer: any;
@@ -23,6 +24,7 @@ export class PedidosPage implements OnInit {
   codigocorto: string ='3321';
   nombrecliente: string ='Juan Quispe';
   step: string = '1';
+  direecionentrega: string = 'Av. Calle S/N';
   constructor(private router: Router,
     public modalController:ModalController
     ) { }
@@ -87,6 +89,19 @@ cerrarmodal(){
 }
 
 step2(){
+  setTimeout(() => 
+  {
+
+
+
+  //direccion aleatoria
+  var myArray = ['Avenida Canto Bello - 431', 'Calle Enrique Barrón - 228', 'Calle Victor Lira - 218 B', 'Avenida A - 100 Nt Cercado', 'Calle MZ H, Int A. Lte. 36', 'Calle los Zafiros - 284 Urb. Santa Ines', 'Avenida Géminis - 327 Las Begonias', 'Avenida Alfonso Ugarte 951', 'AV. LUZURIAGA N° 432', 'Jr. Conde de la Vega 488', 'Av. Reynaldo Saavedra Pinon 33', 'Pérez de Tudela Cdra. 33', 'Jr.Crespo y Castillo cdra 17', 'Jr. Aguarico Cdra. 1400', 'Av. Peruanidad o Salaverry Cdra 3 ', 'Av. Libertad Cdra. 8 San Miguel', 'Cdra. 10 . con Jr. 3 de febrero', 'Av. Manco Capac Cdra. 7', 'Jr. Enrique Villar c/ Jr. C. Arrieta', 'General Mendiburu Cuadra 11', 'Unanue y Mendoza Merino 33', 'Calle Paez con Calle 12 Nro 33', 'Jr. Diaz Camejo Numero 3', 'Av. La Marina Cdra. 13 ', 'Av. Pio XII Cdra. 1/ Av. Elmer Faucett.', 'Av. Precursores - Maranga 22', 'Gral Vivanco Cdra. 5 F', ' PARQUE RUIZ, Jr. Pablo Bermudez 420', 'Mercado 12 de Octubre', 'AA.HH. Manzanilla 12', ' Biblioteca Municipal Jr. Humboldt'];
+  var rand = Math.floor(Math.random()*myArray.length);
+  var rValue = myArray[rand];
+  console.log('direccion',rValue);
+  this.direecionentrega=rValue;
+  //direccion aleatoria
+
   this.horaentrega= new Date();
   var hours = this.horaentrega.getHours();
   var minutes = this.horaentrega.getMinutes();
@@ -100,6 +115,13 @@ step2(){
 
   this.modalController.dismiss();
   this.step='2';
+
+
+  },
+  2300);
+    
+  
+
 }
 
 
