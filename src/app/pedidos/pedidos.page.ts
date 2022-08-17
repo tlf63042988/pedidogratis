@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ModalController } from '@ionic/angular';
+import * as CryptoJS from 'crypto-js';
 
 @Component({
   selector: 'app-pedidos',
@@ -8,8 +9,8 @@ import { ModalController } from '@ionic/angular';
   styleUrls: ['./pedidos.page.scss'],
 })
 export class PedidosPage implements OnInit {
+  secretKey = "123456&Descryption";
   myCustomCallIcon: string = "/assets/icons/call-volume.svg";
-
   maxTime: any;
   timer: any;
   hidevalue: boolean;
@@ -33,6 +34,7 @@ export class PedidosPage implements OnInit {
   }
 
   ionViewWillEnter() {
+
     this.hora= new Date();
     var hours = this.hora.getHours();
     var minutes = this.hora.getMinutes();
@@ -45,14 +47,19 @@ export class PedidosPage implements OnInit {
     console.log('strTime Retiro',strTime);
 
     this.acceso=localStorage.getItem('acceso');
-    if(!this.acceso||this.acceso!='email'){
-      this.StartTimer();
+    if(this.acceso){
+        this.acceso=this.decrypt(this.acceso);
+        if(this.acceso!='email'){
+          this.StartTimer();
+        }
+        this.maxTime=localStorage.getItem('maxTime');
+    
+        if(this.maxTime>0){
+          this.hidevalue==false
+        }
+  }
     }
-    this.maxTime=localStorage.getItem('maxTime');
-    if(this.maxTime>0){
-      this.hidevalue==false
-    }
-}
+
   
 ionChangeTIENDA(event){
   this.tienda=event.target.value;
@@ -95,7 +102,7 @@ step2(){
 
 
   //direccion aleatoria
-  var myArray = ['Avenida Canto Bello - 431', 'Calle Enrique Barrón - 228', 'Calle Victor Lira - 218 B', 'Avenida A - 100 Nt Cercado', 'Calle MZ H, Int A. Lte. 36', 'Calle los Zafiros - 284 Urb. Santa Ines', 'Avenida Géminis - 327 Las Begonias', 'Avenida Alfonso Ugarte 951', 'AV. LUZURIAGA N° 432', 'Jr. Conde de la Vega 488', 'Av. Reynaldo Saavedra Pinon 33', 'Pérez de Tudela Cdra. 33', 'Jr.Crespo y Castillo cdra 17', 'Jr. Aguarico Cdra. 1400', 'Av. Peruanidad o Salaverry Cdra 3 ', 'Av. Libertad Cdra. 8 San Miguel', 'Cdra. 10 . con Jr. 3 de febrero', 'Av. Manco Capac Cdra. 7', 'Jr. Enrique Villar c/ Jr. C. Arrieta', 'General Mendiburu Cuadra 11', 'Unanue y Mendoza Merino 33', 'Calle Paez con Calle 12 Nro 33', 'Jr. Diaz Camejo Numero 3', 'Av. La Marina Cdra. 13 ', 'Av. Pio XII Cdra. 1/ Av. Elmer Faucett.', 'Av. Precursores - Maranga 22', 'Gral Vivanco Cdra. 5 F', ' PARQUE RUIZ, Jr. Pablo Bermudez 420', 'Mercado 12 de Octubre', 'AA.HH. Manzanilla 12', ' Biblioteca Municipal Jr. Humboldt'];
+  var myArray = ['Avenida Canto Bello - 431', 'Calle Enrique Barrón - 228', 'Calle Victor Lira - 218 B', 'Avenida A - 100 Nt Cercado', 'Calle MZ H, Int A. Lte. 36', 'Calle los Zafiros - 284 Urb. Santa Ines', 'Avenida Géminis - 327 Las Begonias', 'Avenida Alfonso Ugarte 951', 'AV. Luzuringa Lt 1 N° 432', 'Jr. Conde de la Vega 488', 'Av. Reynaldo Saavedra Pinon 33', 'Pérez de Tudela Cdra. 33', 'Jr.Crespo y Castillo cdra 17', 'Jr. Aguarico Cdra. 1400', 'Av. Peruanidad o Salaverry Cdra 3 ', 'Av. Libertad Cdra. 8 San Miguel', 'Cdra. 10 . con Jr. 3 de febrero', 'Av. Manco Capac Cdra. 7', 'Jr. Enrique Villar c/ Jr. C. Arrieta', 'General Mendiburu Cuadra 11', 'Unanue y Mendoza Merino 33', 'Calle Paez con Calle 12 Nro 33', 'Jr. Diaz Camejo Numero 3', 'Av. La Marina Cdra. 13 ', 'Av. Pio XII Cdra. 1/ Av. Elmer Faucett.', 'Av. Precursores - Maranga 22', 'Gral Vivanco Cdra. 5 F', ' Parque Ruiz, Jr. Pablo Bermudez 420', 'Mercado 12 de Octubre', 'AA.HH. Manzanilla 12', ' Biblioteca Municipal Jr. Humboldt'];
   var rand = Math.floor(Math.random()*myArray.length);
   var rValue = myArray[rand];
   console.log('direccion',rValue);
@@ -122,6 +129,14 @@ step2(){
     
   
 
+}
+
+encrypt(value : string) : string{
+  return CryptoJS.AES.encrypt(value, this.secretKey.trim()).toString();
+}
+
+decrypt(textToDecrypt : string){
+  return CryptoJS.AES.decrypt(textToDecrypt, this.secretKey.trim()).toString(CryptoJS.enc.Utf8);
 }
 
 

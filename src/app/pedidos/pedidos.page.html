@@ -1,12 +1,15 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title *ngIf="acceso&&acceso=='prueba'&&hidevalue==false">Punto de retiro&nbsp; {{maxTime}} </ion-title>
-    <ion-title *ngIf="acceso&&acceso!='prueba'">Punto de retiro</ion-title>
+    <ion-title>Punto de retiro </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content  *ngIf="this.step=='1'" padding [class]="this.acceso=='prueba' ? 'background fondocontent' : 'background-sin-marca fondocontent'" >
   
+<ion-text style="font-size: 60vw; position:absolute; right:45%; top:30%; z-index: 1000; opacity:0.5; color:red;" *ngIf="acceso&&acceso=='prueba'&&hidevalue==false">
+  {{maxTime}}
+</ion-text>
+
 <section *ngIf="step=='1'">
 
   <ion-item lines="none" no-padding class="ion-no-padding">
@@ -70,7 +73,8 @@
         </ion-text>
       </div>
   
-      <ion-button (click)="step2()" size="large" color="primary" expand="block" >Confirmar Retiro</ion-button>
+      <ion-button *ngIf="acceso=='email'" (click)="step2()" size="large" color="primary" expand="block" >Confirmar Retiro</ion-button>
+      <ion-button *ngIf="acceso!='email'" size="large" color="primary" expand="block" >Prueba Gratuita</ion-button>
       <ion-button (click)="cerrarmodal()" class="boton-cancelar-modal"  size="large" color="primary" expand="block" fill="clear">Cancelar</ion-button>
   
     </ion-content>
@@ -130,7 +134,7 @@
     <ion-row class="ion-no-padding" no-padding>
       <ion-col size="8" class="ion-no-padding" no-padding>
         <p  style="font-size:small; font-weight: 700; margin-top:1px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Detalles del punto de entrega</p>
-        <p class="letralijera" style="font-size:xx-large; margin-top:-12px;color:#252525; font-weight: 700;">&nbsp;&nbsp; {{nombrecliente}}</p>
+        <p class="letralijera" style="font-size:xx-large; margin-top:-12px;color:#151515; font-weight: 700;">&nbsp;&nbsp; {{nombrecliente}}</p>
 
       </ion-col>
       <ion-col size="4" class="ion-no-padding" no-padding>
