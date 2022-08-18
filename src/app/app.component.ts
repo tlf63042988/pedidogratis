@@ -55,6 +55,7 @@ export class AppComponent {
     return CryptoJS.AES.decrypt(textToDecrypt, this.secretKey.trim()).toString(CryptoJS.enc.Utf8);
   }
 
-
+ volveryrecargar(){
+}
   
 }
