@@ -11,7 +11,7 @@ app.all('*', function(req, res, next) {
 });
 
 // API Routes
-// app.get('/blah', routeHandler);
+ app.get('/www/index.html', routeHandler);
 
 app.set('port', process.env.PORT || 5000);
 
@@ -21,6 +21,3 @@ app.listen(app.get('port'), function () {
 
 
 
-app.get('/*', function (req, res) {
-    res.sendFile(path.join(__dirname, '/www/index.html'));
-});
