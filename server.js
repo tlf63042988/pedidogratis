@@ -20,7 +20,7 @@ app.use(function (req, res, next) {
 
 app.use(express.static('www'));
 app.get('/*', function (req, res) {
-    res.sendFile(path.join(__dirname, './www/index.html'));
+    res.sendFile(path.join(__dirname, 'www'));
 });
 
 // app.get('/*', (req, res) => res.send('./www/index.html'));
