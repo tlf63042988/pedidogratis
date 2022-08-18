@@ -4,7 +4,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" *ngIf="this.step=='1'" padding [class]="this.acceso=='prueba' ? 'background fondocontent' : 'background-sin-marca fondocontent'" >
+<ion-content *ngIf="this.step=='1'" padding [class]="this.acceso=='prueba' ? 'background fondocontent' : 'background-sin-marca fondocontent'" >
   
 <ion-text style="font-size: 60vw; position:absolute; right:45%; top:30%; z-index: 1000; opacity:0.5; color:red;" *ngIf="acceso&&acceso=='prueba'&&hidevalue==false">
   {{maxTime}}
