@@ -56,7 +56,7 @@ export class AppComponent {
   }
 
  volveryrecargar(){
-    this.router.navigate(['/home']);
+    this.router.navigate(['/tablinks/estado']);
 }
   
 }
