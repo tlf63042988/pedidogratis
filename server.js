@@ -11,7 +11,7 @@ app.all('*', function(req, res, next) {
 });
 
 // API Routes
- app.get('/www/index.html', routeHandler);
+// app.get('/adl', routeHandler);
 
 app.set('port', process.env.PORT || 5000);
 
@@ -19,5 +19,4 @@ app.listen(app.get('port'), function () {
     console.log('Express server listening on port ' + app.get('port'));
 });
 
-
-
+const path = require("path");
