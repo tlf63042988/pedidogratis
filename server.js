@@ -27,9 +27,11 @@ app.use(express.static('www'));
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("www"));
-  app.get("/*", (req, res) => {
-    res.sendFile(path.join(__dirname, "./www/index.html"));
-  });
+//  app.get("/*", (req, res) => {
+//    res.sendFile(path.join(__dirname, "./www/index.html"));
+ // });
+
+app.get('/*', (req, res) => res.send('www'));
 }
 
 app.set('port', process.env.PORT || 5000);
