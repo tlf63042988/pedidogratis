@@ -24,7 +24,10 @@
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4",
-    "express": "~4.4.3"
+    "express": "~4.4.3",
+"body-parser": "^1.18.3",
+"morgan": "^1.9.1",
+"cors": "^2.8.5"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.0.0",
