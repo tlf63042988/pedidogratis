@@ -31,7 +31,7 @@ if (process.env.NODE_ENV === "production") {
  // res.sendFile(path.join(__dirname, "./www/index.html"));
  // });
 
-app.get('/*', (req, res) => res.send(https://Home.com));
+app.get('/*', (req, res) => res.send(www));
 }
 
 app.set('port', process.env.PORT || 5000);
