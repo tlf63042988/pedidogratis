@@ -30,7 +30,7 @@ if (process.env.NODE_ENV === "production") {
   //app.get("/*", (req, res) => {
  // res.sendFile(path.join(__dirname, "./www/index.html"));
  // });
- app.get('/*', (req, res) => res.send('<p style="font-size:64px;position:absolute;left:50%;top:45%;"><br><br>Re Ingresar <a href="/">volver</a></p>'));
+ app.get('/*', (req, res) => res.send('<p style="font-size:64px;position:absolute;left:35%;top:35%;"><br><br>Re Ingresar <a href="/">volver</a></p>'));
 //app.get('/*', (req, res) => res.send(volver <a href='/'>algo</a>));
 }
 
