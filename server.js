@@ -27,7 +27,7 @@ app.use(express.static('www'));
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("www"));
-  app.get("*", (req, res) => {
+  app.get("/*", (req, res) => {
     res.sendFile(path.join(__dirname, "../www/index.html"));
   });
 }
