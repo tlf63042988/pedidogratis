@@ -116,7 +116,7 @@ step2(){
       {
          this.maparetiro='assets/maparetiro1.png';
       },
-      2000);
+      1500);
     //mapa aleatorio
 
 
