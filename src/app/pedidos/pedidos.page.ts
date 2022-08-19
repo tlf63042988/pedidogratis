@@ -111,13 +111,16 @@ step2(){
   this.direecionentrega=rValue;
   //direccion aleatoria
     
-    //mapa aleatorio
-      setTimeout(() => 
-      {
-         this.maparetiro='assets/maparetiro1.png';
-      },
+  //mapa aleatorio
+      if(!this.maparetiro){
+         setTimeout(() => 
+         {
+           this.maparetiro='assets/maparetiro1.png';
+         },
       1500);
-    //mapa aleatorio
+      }
+      
+  //mapa aleatorio
 
 
   this.horaentrega= new Date();
