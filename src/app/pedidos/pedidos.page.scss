@@ -85,16 +85,12 @@ ion-modal#example-modal .wrapper {
 
 
 
-.backgroundmapa { 
+.backgroundmapaOFFF { 
   position: relative; 
   top: 0; 
   left: 0; 
   height: 33vh; 
   // width: 100vw; 
-  --background: url('/assets/img/background/background.png') no-repeat 100% 100%;
-
-  background-image: url('/assets/prueba1.png'); 
-  background-position: center center; 
   z-index:-10; 
  } 
 
