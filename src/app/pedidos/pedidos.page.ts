@@ -26,6 +26,7 @@ export class PedidosPage implements OnInit {
   nombrecliente: string ='Juan Quispe';
   step: string = '1';
   direecionentrega: string = 'Av. Calle S/N';
+  maparetiro: string;
   constructor(private router: Router,
     public modalController:ModalController
     ) { }
@@ -108,6 +109,10 @@ step2(){
   console.log('direccion',rValue);
   this.direecionentrega=rValue;
   //direccion aleatoria
+    
+    //mapa aleatorio
+    this.maparetiro='assets/maparetiro1.png';
+    //mapa aleatorio
 
   this.horaentrega= new Date();
   var hours = this.horaentrega.getHours();
