@@ -18,10 +18,10 @@
       <ion-input *ngIf="candado" [(ngModel)]="tienda" placeholder="Tienda" style="margin-bottom: 8px; margin-top: -4px; margin-left:15px;font-size:large; font-weight: 900; color:red;"></ion-input>
       <p style="margin-top: -15px; margin-left:15px; font-size:x-small;  font-weight: 700;">Retirar a las  {{hora | date : "hh:mm" }} {{AmOrPm}}</p>
       <div style="position:absolute; right:5%; top:35%;">
-        <ion-icon style="font-size: x-large;" color="primary" name="ellipsis-horizontal"></ion-icon>
-        &nbsp;&nbsp;
-        <ion-icon *ngIf="!candado" (click)="candado=true" style="font-size: x-large;" color="primary" name="map-outline"></ion-icon>
-        <ion-icon *ngIf="candado" (click)="candado=false" style="font-size: x-large;" color="danger" name="map-outline"></ion-icon>
+        <ion-icon *ngIf="!candado" (click)="candado=true"  style="font-size: x-large;" color="primary" name="ellipsis-horizontal"></ion-icon>
+        <ion-icon *ngIf="candado" (click)="candado=false" style="font-size: x-large;" color="danger" name="ellipsis-horizontal"></ion-icon>
+    &nbsp;&nbsp;
+        <ion-icon style="font-size: x-large;" color="primary" name="map-outline"></ion-icon>
       </div>
     </ion-text>
   </ion-item>
