@@ -21,7 +21,7 @@
         <ion-icon *ngIf="!candado" (click)="candado=true"  style="font-size: x-large;" color="primary" name="ellipsis-horizontal"></ion-icon>
         <ion-icon *ngIf="candado" (click)="candado=false" style="font-size: x-large;" color="danger" name="ellipsis-horizontal"></ion-icon>
     &nbsp;&nbsp;
-        <ion-icon style="font-size: x-large;" color="primary" name="map-outline"></ion-icon>
+        <ion-icon (click)="AbrirModalDirecionRetiro()" style="font-size: x-large;" color="primary" name="map-outline"></ion-icon>
       </div>
     </ion-text>
   </ion-item>

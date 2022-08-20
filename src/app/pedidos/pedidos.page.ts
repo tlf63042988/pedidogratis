@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ModalController } from '@ionic/angular';
 import * as CryptoJS from 'crypto-js';
+import { MapalugarretiroPage } from '../modals/mapalugarretiro/mapalugarretiro.page';
 
 @Component({
   selector: 'app-pedidos',
@@ -142,6 +143,28 @@ step2(){
   1700);
     
   
+
+}
+
+  async AbrirModalDirecionRetiro(){
+
+  const modal = await this.modalController.create({
+    component: MapalugarretiroPage,
+    initialBreakpoint: 1.2,
+    componentProps: {
+      'dataparaelmodal': this.maparetiro
+    },
+    breakpoints: [1, 1.5, 1]
+  });
+  modal.onDidDismiss().then((data) => {
+      console.log('data',data);
+      if(data.data.dismissed){
+        console.log('data.data.dismissed=',data.data.dismissed);
+        this.maparetiro=data.data.dismissed;
+      }
+    });
+
+  return await modal.present();
 
 }
 
