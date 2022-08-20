@@ -75,7 +75,7 @@ dismiss() {
 dismissyactualiza() {
   // using the injected ModalController this page
   // can "dismiss" itself and optionally pass back data
-  console.log('enviando dismissed', this.mapas[0].enlace);
+  console.log('enviando dismissed', this.seleccion.enlace);
   if(this.seleccion){
     this.modalController.dismiss({
       'dismissed': this.seleccion.enlace
