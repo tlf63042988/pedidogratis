@@ -150,11 +150,11 @@ step2(){
 
   const modal = await this.modalController.create({
     component: MapalugarretiroPage,
-    initialBreakpoint: 1.2,
+   
     componentProps: {
       'dataparaelmodal': this.maparetiro
     },
-    breakpoints: [1, 1.5, 1]
+    
   });
   modal.onDidDismiss().then((data) => {
       console.log('data',data);
