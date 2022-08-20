@@ -8,7 +8,7 @@ export class PaisesService {
 
   countryData =  [
     {"nombre":"Mapa En Blanco","enlace":"assets/maparetiro1.png"},
-    {"nombre":"Mapa retiro 2","enlace":"assets/maparetiro2.png"},
+    {"nombre":"con iconos","enlace":"assets/mapasretiro/prueba-con-iconos.png"},
    {"nombre":"Mapa retiro 2","enlace":"assets/maparetiro2.png"},
    {"nombre":"Mapa retiro 2","enlace":"assets/maparetiro2.png"},
    {"nombre":"Mapa retiro 2","enlace":"assets/maparetiro2.png"},
