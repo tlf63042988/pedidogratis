@@ -76,15 +76,14 @@ dismissyactualiza() {
   // using the injected ModalController this page
   // can "dismiss" itself and optionally pass back data
   console.log('enviando dismissed', this.mapas[0].enlace);
-  if(this.seleccion&&this.seleccion.length>0){
+  if(this.seleccion){
     this.modalController.dismiss({
-      'dismissed': this.seleccion[0].enlace
+      'dismissed': this.seleccion.enlace
     });
-    this.seleccion=undefined;    
+
   }
 
 }
-
 
 
 }
