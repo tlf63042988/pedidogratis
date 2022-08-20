@@ -19,7 +19,11 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },  {
+    path: 'mapalugarretiro',
+    loadChildren: () => import('./modals/mapalugarretiro/mapalugarretiro.module').then( m => m.MapalugarretiroPageModule)
   },
+
 ];
 
 @NgModule({
