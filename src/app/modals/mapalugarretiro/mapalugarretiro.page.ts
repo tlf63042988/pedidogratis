@@ -12,7 +12,7 @@ export class MapalugarretiroPage implements OnInit {
   filterTerm: string;
   mostrarleusuarios:  boolean = false;
   selected_user: any;
-  seleccion = [];
+  seleccion:any;
   dataparaelmodal;
 
   constructor(
@@ -39,22 +39,15 @@ export class MapalugarretiroPage implements OnInit {
 
   estemapa(cadamapa, index){
     console.log('Usuario',cadamapa);
-    // this.indexdeusuario= i;
     this.selected_user=cadamapa;
-
-    this.mapas.splice(index, 1);
-    this.seleccion[this.seleccion.length]=cadamapa;
+    this.seleccion=cadamapa;
     console.log('seleccion',this.seleccion);
   }
 
 
-  borrarSelectedUserDeSeleccion(cadamapa, index){
-    this.seleccion.splice(index, 1);
-    this.mapas[this.mapas.length]=cadamapa;
-
+  borrarSelectedUserDeSeleccion(){
+    this.seleccion=undefined;
   }
-
-
 
 
 
