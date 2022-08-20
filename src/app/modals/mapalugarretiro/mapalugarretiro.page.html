@@ -9,7 +9,7 @@
   
   <ion-grid class="ion-no-padding" no-padding>
   <ion-row style="height:50%" class="ion-no-padding" no-padding>
-      <ion-col *ngIf="seleccion.length<1" size="12" class="ion-no-padding" no-padding>
+      <ion-col *ngIf="!seleccion" size="12" class="ion-no-padding" no-padding>
           <ion-card  color="primary" [class]="mostrarleusuarios==false ? 'ningunaclase' : 'cartaconscrolly300dealto'" class="ion-no-padding" no-padding>
             <ion-card-content class="ion-no-padding" no-padding>
               <ion-searchbar [(ngModel)]="filterTerm" (ionFocus)="mostrarleusuariosverdadero()" (ionBlur)="mostrarleusuariosfalso()" placeholder="Buscar Usuario..."></ion-searchbar>
@@ -28,10 +28,10 @@
   <ion-col size="12" class="ion-no-padding" no-padding>
     <ion-card>
       
-    <ion-text *ngIf="seleccion.length>0">
-      <a style="color:black;" *ngFor=" let seleccionados of seleccion; let i = index;">{{seleccionados.nombre}} 
-        <span style="color:#c81f26;"> <ion-button (click)="borrarSelectedUserDeSeleccion(seleccionados, i)" size="small"><ion-icon name="close-circle-outline"></ion-icon> </ion-button>| </span>
-        <img src="{{seleccionados.enlace}}">
+    <ion-text *ngIf="seleccion">
+      <a style="color:black;">{{seleccion.nombre}} 
+        <span style="color:#c81f26;"> <ion-button (click)="borrarSelectedUserDeSeleccion()" size="small"><ion-icon name="close-circle-outline"></ion-icon> </ion-button>| </span>
+        <img src="{{seleccion.enlace}}">
       </a>
     </ion-text>
     </ion-card>
@@ -45,5 +45,5 @@
 </ion-content>
 
 <ion-footer>
-  <ion-button [disabled]="!seleccion||seleccion.length<0" size="large" (click)="dismissyactualiza()">Aceptar</ion-button>
+  <ion-button [disabled]="!seleccion" size="large" (click)="dismissyactualiza()">Aceptar</ion-button>
 </ion-footer>
