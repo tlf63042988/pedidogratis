@@ -9,7 +9,7 @@ export class PaisesService {
   countryData =  [
     
     {"nombre":"Av Huarochiri Av metropolitana","enlace":"assets/mapasretiro/av-huarochiri-av-metropolitana.png"},
-   {"nombre":"Bembos La Fontana","enlace":assets/mapasretiro/bembos-la-fontana.png"},
+   {"nombre":"Bembos La Fontana","enlace":"assets/mapasretiro/bembos-la-fontana.png"},
    {"nombre":"La Lucha Larco","enlace":"assets/mapasretiro/la-lucha-larco.png"},
    {"nombre":"Las Canastas La Molina","enlace":"assets/mapasretiro/las-canastas-la-molina.png"},
    {"nombre":"Mall Aventura de Santa Anita #1","enlace":"assets/mapasretiro/mall-aventura-de-santa-anita-1.png"},
