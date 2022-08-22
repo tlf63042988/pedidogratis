@@ -19,7 +19,7 @@ export class PaisesService {
    {"nombre":"Pardos Chicken Javier Prado C/ Ingenieros","enlace":"assets/mapasretiro/pardos-chicken-javier-prado-ingenieros.png"},
    {"nombre":"Mapa en blanco","enlace":"assets/mapasretiro/prueba-con-iconos.png"},
    {"nombre":"Real Plaza Puruchucu #1","enlace":"assets/mapasretiro/real-plaza-puruchucu-1.png"},
-   {"nombre":"Roll Star Suchi Bar #1":"assets/mapasretiro/roll-star-sushi-bar-1.png"},
+   {"nombre":"Roll Star Suchi Bar #1","enlace":"assets/mapasretiro/roll-star-sushi-bar-1.png"},
    {"nombre":"Wong Ate","enlace":"assets/mapasretiro/wong-ate.png"}
     ]
 
