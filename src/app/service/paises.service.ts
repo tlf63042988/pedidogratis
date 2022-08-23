@@ -17,6 +17,7 @@ export class PaisesService {
    {"nombre":"La Lucha # Larco","enlace":"assets/mapasretiro/la-lucha-larco.png"},
    {"nombre":"Las Canastas # La Molina","enlace":"assets/mapasretiro/las-canastas-la-molina.png"},
    {"nombre":"Mall Aventura de Santa Anita #1","enlace":"assets/mapasretiro/mall-aventura-de-santa-anita-1.png"},
+ {"nombre":"Chinawok Santa Anita","enlace":"assets/mapasretiro/mall-aventura-de-santa-anita-1.png"},
    {"nombre":"Mall Aventura de Santa Anita #2","enlace":"assets/mapasretiro/mall-aventura-de-santa-anita-2.png"},
    {"nombre":"Metro # La Molina","enlace":"assets/mapasretiro/metro-la-molina.png"},
    {"nombre":"Municipalidad de Santa Anita","enlace":"assets/mapasretiro/municipalidad-de-santa-anita.png"},
