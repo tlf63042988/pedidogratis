@@ -7,7 +7,8 @@ export class PaisesService {
 
 
   countryData =  [
-    
+
+  {"nombre":"Wong Ate","enlace":"assets/mapasretiro/jockey-plaza.png"},
     {"nombre":"Av Huarochiri Av metropolitana","enlace":"assets/mapasretiro/av-huarochiri-av-metropolitana.png"},
    {"nombre":"Bembos La Fontana","enlace":"assets/mapasretiro/bembos-la-fontana.png"},
    {"nombre":"La Lucha Larco","enlace":"assets/mapasretiro/la-lucha-larco.png"},
