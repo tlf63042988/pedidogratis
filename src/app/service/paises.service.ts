@@ -8,6 +8,9 @@ export class PaisesService {
 
   countryData =  [
 
+
+  {"nombre":"Little Caesar Pizza","enlace":"assets/mapasretiro/little-cesar-pizza.png"},
+  {"nombre":"El Hornero","enlace":"assets/mapasretiro/el-hornero.png"},
   {"nombre":"Jockey Plaza","enlace":"assets/mapasretiro/jockey-plaza.png"},
     {"nombre":"Av Huarochiri Av metropolitana","enlace":"assets/mapasretiro/av-huarochiri-av-metropolitana.png"},
    {"nombre":"Bembos La Fontana","enlace":"assets/mapasretiro/bembos-la-fontana.png"},
