@@ -23,7 +23,7 @@ export class PaisesService {
   {"nombre":"Centro Comercial La Molina","enlace":"assets/mapasretiro/centro-comercial-la-molina.png"},
 
 
-  {"nombre":"Little Caesar Pizza # La Molina","enlace":"assets/mapasretiro/little-cesar-pizza.png"},
+  {"nombre":"Little Caesar Pizza # La Molina","enlace":"assets/mapasretiro/little-cesar-pizza-la-molina.png"},
   {"nombre":"El Hornero","enlace":"assets/mapasretiro/el-hornero.png"},
   {"nombre":"Jockey Plaza","enlace":"assets/mapasretiro/jockey-plaza.png"},
     {"nombre":"Av Huarochiri Av metropolitana","enlace":"assets/mapasretiro/av-huarochiri-av-metropolitana.png"},
