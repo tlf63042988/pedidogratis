@@ -1,6 +1,7 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Punto de retiro </ion-title>
+    <ion-title *ngIf="this.step=='1'">Punto de retiro</ion-title>
+    <ion-title *ngIf="this.step=='2'" >Ir al punto de entrega</ion-title>
   </ion-toolbar>
 </ion-header>
 
