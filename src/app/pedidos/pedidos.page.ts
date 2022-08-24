@@ -36,7 +36,9 @@ export class PedidosPage implements OnInit {
   }
 
   ionViewWillEnter() {
-    this.maparetiro=undefined;
+    if(!this.maparetiro){
+      this.maparetiro=undefined;
+    }
     this.step="1";
     this.hora= new Date();
     var hours = this.hora.getHours();
