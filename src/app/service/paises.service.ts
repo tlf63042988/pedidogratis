@@ -8,6 +8,15 @@ export class PaisesService {
 
   countryData =  [
 
+  {"nombre":"Pikadito Chicken","enlace":"assets/mapasretiro/pikadito-chicken.png"},
+
+  {"nombre":"Papa John's Camacho","enlace":"assets/mapasretiro/papa-johns-camacho.png"},
+
+  {"nombre":"Camacho Varios Por Tambo","enlace":"assets/mapasretiro/camacho-varios-por-tambo.png"},
+
+  {"nombre":"Papa John's Repsol","enlace":"assets/mapasretiro/papa-johns-repsol.png"},
+  {"nombre":"Centro Comercial La Molina","enlace":"assets/mapasretiro/centro-comercial-la-molina.png"},
+
 
   {"nombre":"Little Caesar Pizza # La Molina","enlace":"assets/mapasretiro/little-cesar-pizza.png"},
   {"nombre":"El Hornero","enlace":"assets/mapasretiro/el-hornero.png"},
