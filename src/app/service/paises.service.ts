@@ -9,7 +9,7 @@ export class PaisesService {
   countryData =  [
 
 
-  {"nombre":"Pickadeli - La Molina":"assets/mapasretiro/pickadeli-la-molina.png"},
+  {"nombre":"Pickadeli - La Molina","enlace":"assets/mapasretiro/pickadeli-la-molina.png"},
   {"nombre":"Bembos Aviación","enlace":"assets/mapasretiro/bembos-aviacion.png"},
 
 
