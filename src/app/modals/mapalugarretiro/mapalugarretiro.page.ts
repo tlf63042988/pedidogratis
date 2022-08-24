@@ -65,9 +65,7 @@ export class MapalugarretiroPage implements OnInit {
 
 dismiss() {
 
-  this.modalController.dismiss({
-    'dismissed': this.mapas[0].enlace
-  });
+  this.modalController.dismiss();
 
 }
 
