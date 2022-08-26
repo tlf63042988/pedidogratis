@@ -28,7 +28,10 @@ export class PaisesService {
 
   {"nombre":"Little Caesar Pizza # La Molina","enlace":"assets/mapasretiro/little-cesar-pizza-la-molina.png"},
   {"nombre":"El Hornero","enlace":"assets/mapasretiro/el-hornero.png"},
-  {"nombre":"Jockey Plaza","enlace":"assets/mapasretiro/jockey-plaza.png"},
+ 
+ {"nombre":"Jockey Plaza (para lejos)","enlace":"assets/mapasretiro/jockey-plaza.png"},
+  {"nombre":"Quinoa Café - Jockey Plaza","enlace":"assets/mapasretiro/jockey-plaza.png"},
+
   {"nombre":"Av Huarochiri Av metropolitana","enlace":"assets/mapasretiro/av-huarochiri-av-metropolitana.png"},
    {"nombre":"Bembos - La Fontana","enlace":"assets/mapasretiro/bembos-la-fontana.png"},
    {"nombre":"La Lucha # Larco","enlace":"assets/mapasretiro/la-lucha-larco.png"},
