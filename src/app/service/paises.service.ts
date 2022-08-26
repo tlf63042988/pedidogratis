@@ -24,11 +24,11 @@ export class PaisesService {
   {"nombre":"Municipalidad de Santa Anita","enlace":"assets/mapasretiro/municipalidad-de-santa-anita.png"},
   {"nombre":"Pardos Chicken # La Molina - Javier Prado C/ Ingenieros","enlace":"assets/mapasretiro/pardos-chicken-javier-prado-ingenieros.png"},
   {"nombre":"Mapa en blanco","enlace":"assets/mapasretiro/prueba-con-iconos.png"},
-   {"nombre":"Roll Star Suchi Bar # La Molina","enlace":"assets/mapasretiro/roll-star-sushi-bar-1.png"},
-   {"nombre":"Wong - Ate","enlace":"assets/mapasretiro/wong-ate.png"},
-   {"nombre":"Ohayo Sushi Bar","enlace":"assets/mapasretiro/ohayo-sushi-bar.png"},
-   {"nombre":"Poke For The People - La Molina","enlace":"assets/mapasretiro/poke-for-the-people-la-molina.png"},
-   {"nombre":"Shimaya Ramen - Flora Tristan","enlace":"assets/mapasretiro/shimaya-ramen-flora-tristan.png"},
+  {"nombre":"Roll Star Suchi Bar # La Molina","enlace":"assets/mapasretiro/roll-star-sushi-bar-1.png"},
+  {"nombre":"Wong - Ate","enlace":"assets/mapasretiro/wong-ate.png"},
+  {"nombre":"Ohayo Sushi Bar","enlace":"assets/mapasretiro/ohayo-sushi-bar.png"},
+  {"nombre":"Poke For The People - La Molina","enlace":"assets/mapasretiro/poke-for-the-people-la-molina.png"},
+  {"nombre":"Shimaya Ramen - Flora Tristan","enlace":"assets/mapasretiro/shimaya-ramen-flora-tristan.png"},
 
 
 
@@ -45,12 +45,13 @@ export class PaisesService {
 
 
 {"nombre":"Mall Aventura de Santa Anita #1","enlace":"assets/mapasretiro/mall-aventura-de-santa-anita-1.png"},
-   {"nombre":"Chinawok Santa Anita","enlace":"assets/mapasretiro/mall-aventura-de-santa-anita-1.png"},
    {"nombre":"Mall Aventura de Santa Anita #2","enlace":"assets/mapasretiro/mall-aventura-de-santa-anita-2.png"},
+   {"nombre":"Chinawok Santa Anita","enlace":"assets/mapasretiro/mall-aventura-de-santa-anita-1.png"},
 
 
 {"nombre":"Real Plaza Puruchucu #1","enlace":"assets/mapasretiro/real-plaza-puruchucu-1.png"},
    {"nombre":"Papa John's Puruchuco","enlace":"assets/mapasretiro/real-plaza-puruchucu-1.png"},
+   {"nombre":"Delicass - Puruchuco","enlace":"assets/mapasretiro/real-plaza-puruchucu-1.png"},
 
 
 {"nombre":"Molicentro (Para Lejos)","enlace":"assets/mapasretiro/molicentro.png"}
