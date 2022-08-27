@@ -8,6 +8,9 @@ export class PaisesService {
 
   countryData =  [
 
+
+  {"nombre":"Chifa Fong Loy","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+  {"nombre":"Sanguchón Campesino - Alameda del Corregidor","enlace":"assets/mapasretiro/sanguchon-campesino-alameda-del-corregidor.png"},
   {"nombre":"Up Burger - La Rambla","enlace":"assets/mapasretiro/up-burger-la-rambla.png"},
   {"nombre":"Pickadeli - La Molina","enlace":"assets/mapasretiro/pickadeli-la-molina.png"},
   {"nombre":"Bembos Aviación","enlace":"assets/mapasretiro/bembos-aviacion.png"},
@@ -38,6 +41,8 @@ export class PaisesService {
  
 
 {"nombre":"Centro Comercial La Molina(para lejos)","enlace":"assets/mapasretiro/centro-comercial-la-molina.png"},
+  {"nombre":"Juicy Lucy - La Molina","enlace":"assets/mapasretiro/centro-comercial-la-molina.png"},
+
 
 
 {"nombre":"Jockey Plaza (para lejos)","enlace":"assets/mapasretiro/jockey-plaza.png"},
