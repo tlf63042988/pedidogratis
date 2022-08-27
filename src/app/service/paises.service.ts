@@ -35,7 +35,7 @@ export class PaisesService {
 
 
 
-{"nombre":"Camacho Varios Por Tambo","enlace":"assets/mapasretiro/camacho-varios-por-tambo.png"},
+{"nombre":"Camacho Varios Por Tambo (para lejos)","enlace":"assets/mapasretiro/camacho-varios-por-tambo.png"},
   {"nombre":"Mamma Tomato Pizza - Surco","enlace":"assets/mapasretiro/camacho-varios-por-tambo.png"},
   {"nombre":"Juicy Wraps - Patio Panorama","enlace":"assets/mapasretiro/camacho-varios-por-tambo.png"},
  
@@ -49,12 +49,12 @@ export class PaisesService {
   {"nombre":"Quinoa Café - Jockey Plaza","enlace":"assets/mapasretiro/jockey-plaza.png"},
 
 
-{"nombre":"Mall Aventura de Santa Anita #1","enlace":"assets/mapasretiro/mall-aventura-de-santa-anita-1.png"},
+{"nombre":"Mall Aventura de Santa Anita (para lejos)","enlace":"assets/mapasretiro/mall-aventura-de-santa-anita-1.png"},
    {"nombre":"Mall Aventura de Santa Anita #2","enlace":"assets/mapasretiro/mall-aventura-de-santa-anita-2.png"},
    {"nombre":"Chinawok Santa Anita","enlace":"assets/mapasretiro/mall-aventura-de-santa-anita-1.png"},
 
 
-{"nombre":"Real Plaza Puruchucu #1","enlace":"assets/mapasretiro/real-plaza-puruchucu-1.png"},
+{"nombre":"Real Plaza Puruchucu (para lejos)","enlace":"assets/mapasretiro/real-plaza-puruchucu-1.png"},
    {"nombre":"Papa John's Puruchuco","enlace":"assets/mapasretiro/real-plaza-puruchucu-1.png"},
    {"nombre":"Delicass - Puruchuco","enlace":"assets/mapasretiro/real-plaza-puruchucu-1.png"},
 
