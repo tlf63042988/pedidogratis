@@ -16,6 +16,7 @@ export class PaisesService {
   {"nombre":"Bembos Aviación","enlace":"assets/mapasretiro/bembos-aviacion.png"},
   {"nombre":"Pikadito Chicken","enlace":"assets/mapasretiro/pikadito-chicken.png"},
   {"nombre":"Papa John's Camacho","enlace":"assets/mapasretiro/papa-johns-camacho.png"},
+  {"nombre":"Señor Limón - La Molina","enlace":"assets/mapasretiro/papa-johns-camacho.png"},
   {"nombre":"Papa John's Repsol","enlace":"assets/mapasretiro/papa-johns-repsol.png"},
   {"nombre":"Little Caesars' Pizza - La Molina","enlace":"assets/mapasretiro/little-cesar-pizza-la-molina.png"},
   {"nombre":"El Hornero","enlace":"assets/mapasretiro/el-hornero.png"},
@@ -32,7 +33,10 @@ export class PaisesService {
   {"nombre":"Ohayo Sushi Bar","enlace":"assets/mapasretiro/ohayo-sushi-bar.png"},
   {"nombre":"Poke For The People - La Molina","enlace":"assets/mapasretiro/poke-for-the-people-la-molina.png"},
   {"nombre":"Shimaya Ramen - Flora Tristan","enlace":"assets/mapasretiro/shimaya-ramen-flora-tristan.png"},
-
+  {"nombre":"Flora Tristan(varios para lejos)","enlace":"assets/mapasretiro/shimaya-ramen-flora-tristan.png"},
+  {"nombre":"Chifa El Dorado 844","enlace":"assets/mapasretiro/shimaya-ramen-flora-tristan.png"},
+  {"nombre":"Fudge You - La Molina","enlace":"assets/mapasretiro/you.png"},
+  {"nombre":"Popeyes Metro Canadá","enlace":"assets/mapasretiro/popeyes-canada.png"},
 
 
 {"nombre":"Camacho Varios Por Tambo (para lejos)","enlace":"assets/mapasretiro/camacho-varios-por-tambo.png"},
@@ -60,6 +64,10 @@ export class PaisesService {
 
 
 {"nombre":"Molicentro (Para Lejos)","enlace":"assets/mapasretiro/molicentro.png"}
+
+
+{"nombre":"Centro Comercial El Polo (para lejos)","enlace":"assets/mapasretiro/el-polo.png"}
+
 
     ]
 
