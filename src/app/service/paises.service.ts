@@ -63,7 +63,7 @@ export class PaisesService {
    {"nombre":"Delicass - Puruchuco","enlace":"assets/mapasretiro/real-plaza-puruchucu-1.png"},
 
 
-{"nombre":"Molicentro (Para Lejos)","enlace":"assets/mapasretiro/molicentro.png"}
+{"nombre":"Molicentro (Para Lejos)","enlace":"assets/mapasretiro/molicentro.png"},
 
 
 {"nombre":"Centro Comercial El Polo (para lejos)","enlace":"assets/mapasretiro/el-polo.png"}
