@@ -35,7 +35,7 @@ export class PaisesService {
   {"nombre":"Shimaya Ramen - Flora Tristan","enlace":"assets/mapasretiro/shimaya-ramen-flora-tristan.png"},
   {"nombre":"Flora Tristan(varios para lejos)","enlace":"assets/mapasretiro/shimaya-ramen-flora-tristan.png"},
   {"nombre":"Chifa El Dorado 844","enlace":"assets/mapasretiro/shimaya-ramen-flora-tristan.png"},
-  {"nombre":"Fudge You - La Molina","enlace":"assets/mapasretiro/you.png"},
+  {"nombre":"Fudge You - La Molina","enlace":"assets/mapasretiro/fudge-you.png"},
   {"nombre":"Popeyes Metro Canadá","enlace":"assets/mapasretiro/popeyes-canada.png"},
 
 
