@@ -97,15 +97,15 @@ ion-modal#example-modal .wrapper {
 
 
 ion-loading.custom-loading {
-    background: transparent !important;
-    box-shadow: none !important;
+    --background: transparent !important;
+    --box-shadow: none !important;
 }
 
 
 ion-loading.custom-loading {
   .loading-wrapper {
-    background: transparent !important;
-    box-shadow: none !important;
+    --background: transparent !important;
+    --box-shadow: none !important;
   }
 }
 
