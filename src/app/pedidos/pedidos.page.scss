@@ -94,3 +94,14 @@ ion-modal#example-modal .wrapper {
   z-index:-10; 
  } 
 
+
+
+
+ion-loading.custom-loading {
+  .loading-wrapper {
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+}
+
+
