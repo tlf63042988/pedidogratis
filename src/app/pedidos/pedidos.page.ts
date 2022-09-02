@@ -153,7 +153,7 @@ async step2(){
 
   this.modalController.dismiss();
   this.step='2';
-  loading.dismiss();
+  this.myLoading.dismiss();
 
   },
   1700);
