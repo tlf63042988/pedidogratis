@@ -102,8 +102,19 @@ cerrarmodal(){
 }
 
 step2(){
+
+    const loading = await this.loadingCtrl.create({
+      message: 'Acepting Action',
+      duration: 3000,
+    });
+    loading.present();
+
+
+
   setTimeout(() => 
   {
+
+
 
 
 
@@ -140,7 +151,7 @@ step2(){
 
   this.modalController.dismiss();
   this.step='2';
-
+  loading.dismiss();
 
   },
   1700);
