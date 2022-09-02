@@ -28,6 +28,7 @@ export class PedidosPage implements OnInit {
   step: string = '1';
   direecionentrega: string = 'Av. Calle S/N';
   maparetiro: string;
+  myLoading: any;
   constructor(private router: Router,
 private loadingCtrl: LoadingController,
     public modalController:ModalController
@@ -103,11 +104,12 @@ cerrarmodal(){
 
 async step2(){
 
-    const loading = await this.loadingCtrl.create({
-      message: 'Acepting Action',
-      duration: 3000,
-    });
-    loading.present();
+ this.myLoading = await this.loadingCtrl.create({ 
+  spinner: null,
+  message: '<ion-img src="assets/gif/loading.gif"></ion-img>',
+  cssClass: 'custom-loading'
+  });
+  await this.myLoading.present();
 
 
 
