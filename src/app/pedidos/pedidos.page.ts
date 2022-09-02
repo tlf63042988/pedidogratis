@@ -101,7 +101,7 @@ cerrarmodal(){
   this.modalController.dismiss();
 }
 
-step2(){
+async step2(){
 
     const loading = await this.loadingCtrl.create({
       message: 'Acepting Action',
