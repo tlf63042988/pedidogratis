@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ModalController } from '@ionic/angular';
+import { ModalController, LoadingController } from '@ionic/angular';
 import * as CryptoJS from 'crypto-js';
 import { MapalugarretiroPage } from '../modals/mapalugarretiro/mapalugarretiro.page';
 
@@ -29,6 +29,7 @@ export class PedidosPage implements OnInit {
   direecionentrega: string = 'Av. Calle S/N';
   maparetiro: string;
   constructor(private router: Router,
+private loadingCtrl: LoadingController,
     public modalController:ModalController
     ) { }
 
