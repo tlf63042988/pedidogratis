@@ -15,7 +15,7 @@
 
   <ion-item lines="none" no-padding class="ion-no-padding">
     <ion-text>
-      <p *ngIf="!candado" style="margin-top: 6px; margin-left:15px;font-size:large; font-weight: 900;">{{tienda}}</p>
+      <p *ngIf="!candado" style="margin-top: 6px; margin-left:15px;font-size:medium; font-weight: 900;">{{tienda}}</p>
       <ion-input *ngIf="candado" [(ngModel)]="tienda" placeholder="Tienda" style="margin-bottom: 8px; margin-top: -4px; margin-left:15px;font-size:large; font-weight: 900; color:red;"></ion-input>
       <p style="margin-top: -15px; margin-left:15px; font-size:x-small;  font-weight: 700;">Retirar a las  {{hora | date : "hh:mm" }} {{AmOrPm}}</p>
       <div style="position:absolute; right:5%; top:35%;">
@@ -45,7 +45,7 @@
           </ion-col>
         </ion-row>
         
-        <p *ngIf="!candado" class="letralijera" style="font-size:medium; margin-top:-12px;color:#252525; font-weight: 700;">{{nombrecliente}}</p>
+        <p *ngIf="!candado" class="letralijera" style="font-size:medium; margin-top:-12px;color:#252525; font-weight: 500;">{{nombrecliente}}</p>
         <ion-input *ngIf="candado" [(ngModel)]="nombrecliente" placeholder="Nombre Cliente"  style="font-size:medium; margin-top:-22px; margin-bottom:6px; color:red; font-weight: 700;"></ion-input>
         <p style="color:#180c9c; margin-top:-3px;">Ver el producto de la orden (1)  <ion-icon color="primary" name="chevron-down-outline"></ion-icon></p>
         <hr style="width:120%; margin-left:-20px;">
