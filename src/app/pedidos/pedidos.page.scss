@@ -97,8 +97,10 @@ ion-modal#example-modal .wrapper {
 
 
 ion-loading.custom-loading {
-    --background: transparent !important;
-    --box-shadow: none !important;
+  --background: #e3edff;
+  --spinner-color: #1c6dff;
+
+  color: #1c6dff;
 }
 
 
