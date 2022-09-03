@@ -44,6 +44,14 @@
       }
 
 
+ion-loading.custom-loading {
+  .loading-wrapper {
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+}
+
+
 
 /* Core CSS required for Ionic components to work properly */
 @import "~@ionic/angular/css/core.css";
