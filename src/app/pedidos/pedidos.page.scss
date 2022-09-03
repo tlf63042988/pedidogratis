@@ -108,18 +108,15 @@ background-image: url('/assets/loading.gif') no-repeat 100% 100%;
 
 
 ion-loading.custom-loading {
-  --background: #e3edff;
-  --spinner-color: #1c6dff;
 
-  color: #1c6dff;
+  --background: url('/assets/loading.gif') no-repeat 100% 100%;
+
+--background-image: url('/assets/loading.gif') no-repeat 100% 100%; 
+background-image: url('/assets/loading.gif') no-repeat 100% 100%;
+
+ background: url('/assets/loading.gif') no-repeat 100% 100%;
 }
 
 
-ion-loading.custom-loading {
-  .loading-wrapper {
-    --background: transparent !important;
-    --box-shadow: none !important;
-  }
-}
 
 
