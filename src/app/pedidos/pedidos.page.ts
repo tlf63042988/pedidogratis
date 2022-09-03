@@ -106,7 +106,6 @@ async step2(){
 
  this.myLoading = await this.loadingCtrl.create({ 
   spinner: null,
-  message: '<ion-img src="assets/loading.gif"></ion-img>',
   cssClass: 'custom-loading',
   });
   await this.myLoading.present();
