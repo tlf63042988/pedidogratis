@@ -95,6 +95,12 @@ ion-modal#example-modal .wrapper {
  } 
 
 
+ion-loading.custom-loading {
+  .loading-wrapper {
+    background: #ffffff url("assets/loading.gif") no-repeat center;
+  }
+}
+
 
 ion-loading.custom-loading {
   --background: #e3edff;
