@@ -66,7 +66,50 @@ export class PaisesService {
 {"nombre":"Molicentro (Para Lejos)","enlace":"assets/mapasretiro/molicentro.png"},
 
 
-{"nombre":"Centro Comercial El Polo (para lejos)","enlace":"assets/mapasretiro/el-polo.png"}
+{"nombre":"Centro Comercial El Polo (para lejos)","enlace":"assets/mapasretiro/el-polo.png"},
+
+
+
+{"nombre":"Papa John's - Camacho","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Pikadito Chicken","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Bembos Aviación","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Poke For The People - La Molina","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Juicy Wraps - Patio Panorama(camacho-varios-por-bembos)","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Rústica - Los Flamencos(ovalo Santa Anita)","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Up Burger - La Rambla","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Juicy Lucy - La Molina(centro comercial la Molina)","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Naruto - La Molina","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Chifa La Corte Dorada","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"María Almenara - Camacho(sirve papá jhons Camacho)","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Carnívoro Salamanca","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"El Corralito(sirve carnívoro)","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Señor Limón - La Molina(sirve papá jhons Camacho está a 2 locales)","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Chifa El Dorado 844(sirve el que ya está de flora Tristán a ese duplicarlo también flora Tristán varios)","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Popeyes Metro Canadá","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Okami Sushi Bar - La Molina","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Cevichería Fuego Azul","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Mr.leito","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Montao - Nicolás Ayllón (sirve mall aventura para lejos )","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Los Criollos - La Molina","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Don Mamino - La Molina","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Chifa Pong Sem","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Pardos Chicken - La Molina","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Okami Sushi Bar - La Molina","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Cevichería Miramar - La Molina","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"La Leña - Raúl Ferrero","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Chifa Fung Shing - Corregidor","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Pollería narch's( sirve Chifa fong loy, está alfrente )","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Chifa Fung Shing - Constructores ( sirve fong loy, está alado)","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Tortas Piero's - Ate","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Farmer Chicken & Co","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"FILO","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Amanti Pizzas","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Pardos Chicken - La Molina","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Protein Food Camacho( sirve bembos Camacho)","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Secretos Árabes - La Molina","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+{"nombre":"Roky's - Molina 2","enlace":"assets/mapasretiro/chifa-fong-loy.png"},
+
+
 
 
     ]
