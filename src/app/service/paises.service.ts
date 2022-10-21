@@ -119,6 +119,18 @@ export class PaisesService {
 {"nombre":"Roky's - Molina 2","enlace":"assets/mapasretiro/Rokys-Molina2.png"},
 {"nombre":"La Chicken - Constructores","enlace":"assets/mapasretiro/LaChicken-Constructores.png"},
 {"nombre":"Chifa Lun Ma 1","enlace":"assets/mapasretiro/ChifaLunMa1.png"},
+
+{"nombre":"Chifa Girasol 2","enlace":"assets/mapasretiro/ChifaGirasol2.png"},
+{"nombre":"Chifa Palacio Cristal - Julio C Tello","enlace":"assets/mapasretiro/ChifaPalacioCristal-JulioCTello.png"},
+{"nombre":"DacSabor","enlace":"assets/mapasretiro/DacSabor.png"},
+{"nombre":"Don Wallpa Pizzas Artesanales","enlace":"assets/mapasretiro/DonWallpaPizzasArtesanales.png"},
+{"nombre":"Fridays Dk La Molina","enlace":"assets/mapasretiro/FridaysDkLaMolina.png"},
+{"nombre":"Puerto Máncora","enlace":"assets/mapasretiro/PuertoMancora.png"},
+{"nombre":"Roky's - Molina 2","enlace":"assets/mapasretiro/Rokys-Molina2.png"},
+{"nombre":"Sanguchón Campesino - UPC","enlace":"assets/mapasretiro/SanguchonCampesino-UPC.png"},
+{"nombre":"Sienna Bakery - La Estancia","enlace":"assets/mapasretiro/SiennaBakery-LaEstancia.png"},
+{"nombre":"Tinajas Viñas","enlace":"assets/mapasretiro/TinajasViñas.png"},
+
 {"nombre":"El Meson - Santa Anita","enlace":"assets/mapasretiro/ElMeson-SantaAnita.png"}
 
 
