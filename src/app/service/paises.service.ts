@@ -130,7 +130,8 @@ export class PaisesService {
 {"nombre":"Sanguchón Campesino - UPC","enlace":"assets/mapasretiro/SanguchonCampesino-UPC.png"},
 {"nombre":"Sienna Bakery - La Estancia","enlace":"assets/mapasretiro/SiennaBakery-LaEstancia.png"},
 {"nombre":"Tinajas Viñas","enlace":"assets/mapasretiro/TinajasViñas.png"},
-
+{"nombre":"Chifa All Wok","enlace":"assets/mapasretiro/jockey-plaza.png"},
+{"nombre":"Mr. Paleta - La Molina","enlace":"assets/mapasretiro/camacho-varios-por-tambo.png"},
 {"nombre":"El Meson - Santa Anita","enlace":"assets/mapasretiro/ElMeson-SantaAnita.png"}
 
 
